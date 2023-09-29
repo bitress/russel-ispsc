@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <title>ISPSC </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/ispsc_logo.png">
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    
+    <body>
+        <div class="header">
+            <div class="logo">
+                <img src="img/ispsc_logo.png">
+               
+            </div>
+            <div class="header-text">REPUBLIC OF THE PHILIPPINES<hr>
+                <h2>ILOCOS SUR POLYTECHNIC STATE COLLEGE </h2>TAGUDIN CAMPUS | TAGUDIN, ILOCOS SUR
+            </div>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+              <li><a href="#" class="navlink">ADMISSION</a>
+                  <ul class="subclass">
+                      <li><a href="requirements.html">Admission Requirements</a></li>
+                      <li><a href="procedure.html">Procedure for Enrollment</a></li>
+                  </ul>
+              </li>
+              <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+
+
+        <div class="container">
+
+          <div class="title">
+            <h3>Enrollment Requirements</h3>
+          </div>
+
+          
+        <div class="collapse-content">
+          <div class="collapse" id="hs">
+            <a class="instagram" href="#hs"
+              ><i class="fab fa-instagram">High School Graduate of the Old Basic Curriculum (2015 and below)</i> </a
+            >
+            <div class="content">
+              <div class="inner-content">
+                <h3>High School Graduate of the Old Basic Curriculum (2015 and below)</h3>
+                High School Report Card (Form 138)<br>
+                  Certificate of Good Moral Character<br>
+                  Birth Certificate issued by the Philippine Statistic Authority (PSA); formerly NSO<br>
+                  2 pcs. passport size, white background, with name tag (i.e. DELA CRUZ, Juan)<br>
+
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="shs">
+            <a class="twitter" href="#shs"
+              ><i class="fab fa-twitter"></i> Senior High School (2016 and above)</a
+            >
+            <div class="content">
+              <div class="inner-content">
+                <h3>Senior High School (2016 and above)</h3>
+                SF 9 (Senior High School Report Card)<br>
+                  Certificate of Good Moral Character<br>
+                  Birth Certificate issued by the Philippine Statistic Authority (PSA); formerly NSO<br>
+                  2 pcs. passport size, white background, with name tag (i.e. DELA CRUZ, Juan)<br>
+                                  </div>
+            </div>
+          </div>
+          <div class="collapse" id="als">
+            <a class="dribbble" href="#als"
+              ><i class="fab fa-dribbble"></i> ALS/A&E Passers (Secondary Level)</a
+            >
+            <div class="content">
+              <div class="inner-content">
+                <h3>ALS/A&E Passers (Secondary Level)</h3>
+                  ALS Rating (Passed) Certificate idicating that the student is eligible for admission to college<br>
+                  Certificate of Good Moral Character<br>
+                  Birth Certificate issued by the Philippine Statistic Authority (PSA); formerly NSO<br>
+                  2 pcs. passport size, white background, with name tag (i.e. DELA CRUZ, Juan)<br>
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="tr">
+            <a class="youtube" href="#tr"
+              ><i class="fab fa-youtube"></i> Transferees (In-bound)</a
+            >
+            <div class="content">
+              <div class="inner-content">
+                <h3>Transferees (In-bound)</h3>
+                Transfer Credentials<br>
+
+                  Certificate of Good Moral Character<br>
+                  Certificate of Final Grades<br>
+                  Certificate of Good Moral Character<br>
+                  Transfer Certificate<br>
+                  Certificate of Good Moral Character<br>
+                  Birth Certificate issued by the Philippine Statistic Authority (PSA); formerly NSO<br>
+                  2 pcs. passport size, white background, with name tag (i.e. DELA CRUZ, Juan)
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="ce">
+              <a class="dribbbled" href="#ce"
+                ><i class="fab fa-dribbble"></i>Cross-Enrollee (In-bound from other school)</a
+              >
+              <div class="content">
+                <div class="inner-content">
+                  <h3>Cross-Enrollee (In-bound from other school)</h3>
+                  Permit to Cross-enroll
+                </div>
+              </div>
+            </div>
+            <div class="collapse" id="rs">
+              <a class="dribbble" href="#rs"
+                ><i class="fab fa-dribbble"></i> Returning Students</a
+              >
+              <div class="content">
+                <div class="inner-content">
+                  <h3>Returning Students</h3>
+                  Evaluation Sheet (signed by Program Hewad or Dean)<br>
+                  Certificate of Final Grades / Class Cards from previous semester
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        </div>
+
+        <footer>
+          &copy; 2023 Ilocos Sur Polytechnic State College.
+      </footer>
+   <script>
+  document.addEventListener('click', function (event) {
+    const submenu = document.querySelector('.subclass');
+    const navlink = document.querySelector('.navlink');
+
+    if (!navlink.contains(event.target)) {
+        submenu.style.display = 'none';
+    }
+    });
+    
+    const navlink = document.querySelector('.navlink');
+    const submenu = document.querySelector('.subclass');
+    
+    navlink.addEventListener('click', function (event) {
+        event.preventDefault();
+        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        event.stopPropagation(); 
+    });
+
+
+  const collapses = document.querySelectorAll('.collapse');
+
+  // Add click event listeners to toggle buttons
+  collapses.forEach((collapse) => {
+    const toggleButton = collapse.querySelector('a');
+    const content = collapse.querySelector('.content');
+
+    toggleButton.addEventListener('click', () => {
+      content.style.display = content.style.display === 'none' ? 'block' : 'none';
+      collapse.classList.toggle('collapsed');
+    });
+  });
+  </script>
+    </body>
+</html>

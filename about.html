@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>ISPSC </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/ispsc_logo.png">
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <body>
+        <div class="header">
+            <div class="logo">
+                <img src="img/ispsc_logo.png">
+               
+            </div>
+            <div class="header-text">REPUBLIC OF THE PHILIPPINES<hr>
+                <h2>ILOCOS SUR POLYTECHNIC STATE COLLEGE </h2>TAGUDIN CAMPUS | TAGUDIN, ILOCOS SUR
+            </div>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+              <li><a href="#" class="navlink">ADMISSION</a>
+                  <ul class="subclass">
+                      <li><a href="requirements.html">Admission Requirements</a></li>
+                      <li><a href="procedure.html">Procedure for Enrollment</a></li>
+                  </ul>
+              </li>
+              <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="row">
+            <div class="col">
+                <div class="banner_text">
+                    &nbsp;
+                    <h3><span>ISPSC</span> Tagudin Campus</h3>
+                    <h5>Brief History</h5>
+                    <p>Tagudin Campus is the seat of governance in the South Cluster. It was known formerly as the Tagudin General Comprehensive High School established which started as the Tagudin High 
+                        xSchool and became a national high school by virtue of RA 4447 which was signed into law in June 19, 1965. After its integration into ISPSC, it became the College of Arts and Sciences. 
+                        Today it houses the College of Teacher Education, the College of Business and Hospitality Management, the College of Arts and Sciences, and the College of Information Technology.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="heading">
+                    <img src="img/ispsc.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="vm">
+            <h3>VISION AND MISSION</h3>
+        </div>
+        <div class="row">
+            <div class="col">
+
+                <div class="heading">
+
+                    <h3>VISION</h3>
+                    <div class="VMPC_uwu">
+                        <p> A vibrant and nurturing Polytechnic Service College for transforming lives and communities.
+                            Filipino: (Pangitain) Maningning at mapag-arugang politeknikong serbisyo-kolehiyo para sa pagpapaunlad ng buhay at lipunan.
+                            Iloco: (Sirmata) Narimat ken managtaripato nga serbisyo-kolehiyo politekniko para ti pannakabalbaliw iti biag ken kagimongan.
+                        
+                        </p>
+                        </div>
+                </div> 
+
+            </div>
+            <div class="col">
+
+                <div class="heading">
+
+                    <h3>MISSION</h3>
+                    <div class="VMPC_uwu">
+                        <p> The College Library exists to support the philosophy, vision and VMPC of the Ilocos Sur Polytechnic State College and the goals and objectives of the different Colleges, providing excellent library services on behalf of instruction,
+                            research, extension, production, and other scholarly activity. To this end the Library works closely with the faculty, staff and students of the college to achieve its goal and objectives, specified below. </p>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+
+                    <div class="heading">
+                        <h3>GOALS AND OBJECTIVES</h3>
+                        <div class="VMPC_uwu">
+                            <p> 1. To make the college responsive and relevant to the individual and social needs for optimum human development.<br>
+                                2. To offer priority programs in tourism, teacher education, agriculture fishery, agro-forestry, trades, business industry, and Information technology which will generate knowledge base to educate the people and communities.<br>
+                                3. To conduct a wide-range of research and extension programs to provide quality training and technologies for inclusive growth.<br>
+                                4. To implement government programs and thrusts in the context of regional and national development for poverty alleviation.<br>
+                                5. To prepare and develop highly productive and employable professionals, “glocal” (global and local) technopreneurs who are morally-crafted and environmentally-oriented for coping globalization standards.</p>
+
+                            </div>
+                    </div>
+
+
+                </div>
+                <div class="col">    
+                <div class="heading">
+                    <h3>CORE VALUES</h3>
+                    <div class="VMPC_uwu">
+                    <p><span>P</span>roductivity - The delivery of quality programs in instruction, research, extension, production, and development of responsive, proactive professionals and graduates and professing determination and hard work in the system.<br>
+                        <span>R</span>esiliency - Refers to the renewal and motivational strategies, looking at the bright side of academic life and cultivating positive attitudes amidst failures and adversities.<br>
+                        <span>A</span>ccountability - Means the responsibility, answerability, transparency, impartially, decisiveness, and delegation of work roles and streamlining of functions.<br>
+                        <span>I</span>ngenuity - Refers to prudent use of resources, prudence in spending, cost-cutting measures, and deciding the best possible action considering circumstances.<br>
+                        <span>S</span>ynergy - Pertains to teamwork, collaboration, orchestration, subordination, and of all partner agencies, sponsors, and stakeholders, parents, alumni, and communities.<br>
+                        <span>E</span>xcellence - Refers to global orientation, borderless perspective, equal opportunities, empowerment, and transformation, multi-tasking and leading by example.<br>
+                        <span>S</span>trategic Developmental Goals ("BRAVE D’ STORM")</p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+            <footer>
+                &copy; 2023 Ilocos Sur Polytechnic State College.
+            </footer>
+            <script>
+                document.addEventListener('click', function (event) {
+                const submenu = document.querySelector('.subclass');
+                const navlink = document.querySelector('.navlink');
+            
+                if (!navlink.contains(event.target)) {
+                    submenu.style.display = 'none';
+                }
+                });
+                
+                const navlink = document.querySelector('.navlink');
+                const submenu = document.querySelector('.subclass');
+                
+                navlink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+                    event.stopPropagation(); 
+                });
+            </script>
+    </body>
+</html>
